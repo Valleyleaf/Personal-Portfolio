@@ -16,6 +16,8 @@ body{
 h2{
     text-align: left;
     justify-content: flex-start;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 header{
