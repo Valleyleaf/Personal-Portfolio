@@ -1,6 +1,25 @@
 :root{
-background-color: darkgrey;
 font-family: Arial, Helvetica, sans-serif;
---darkgrey var(color: darkgrey;);
+--darkgrey: #333333;
+--standard-font: arial, Helvetica, sans-serif;
+--white: #fcfcfc;
 
+}
+
+body{
+    background-color: var(--darkgrey);
+    font-family: var(--standard-font);
+
+
+}
+
+h2{
+    text-align: left;
+    justify-content: flex-start;
+}
+
+header{
+    background-color: var(--white);
+    margin: 25px;
+    padding: 40px;
 }
