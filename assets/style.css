@@ -25,3 +25,30 @@ header{
     margin: 25px;
     padding: 40px;
 }
+
+nav{
+    font-size: small;
+    background-color: var(--white);
+    text-decoration: dashed;
+    color: var(--darkgrey);
+    justify-content: flex-start;
+}
+
+.flex-container{
+display: flex;
+
+}
+
+.nav-item{
+    flex: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+
+}
+
+button:hover{
+    background-color: var(--white);
+
+}
+
