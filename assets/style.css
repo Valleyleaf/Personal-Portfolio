@@ -1,16 +1,18 @@
+
+
 :root{
 font-family: Arial, Helvetica, sans-serif;
 --darkgrey: #333333;
 --standard-font: arial, Helvetica, sans-serif;
 --white: #fcfcfc;
-
+--dashpurple: #eeb2fa;
 }
 
 body{
     background-color: var(--darkgrey);
     font-family: var(--standard-font);
-
-
+    margin: 0;
+    padding: 0;
 }
 
 h2{
@@ -19,24 +21,25 @@ h2{
     font-weight: bolder;
     font-style: italic;
 }
-
+/* For my design, I decided to go with a combination of square and pointed rectangles. The header, combined with the aside
+creates a boxed in shape to hold the section named "portfoliocards". */
 header{
-    background-color: var(--white);
-    margin: 25px;
-    padding: 40px;
+    background-color: var(--dashpurple);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
 }
 
 nav{
     font-size: small;
-    background-color: var(--white);
     text-decoration: dashed;
     color: var(--darkgrey);
-    justify-content: flex-start;
+    justify-content: flex-end;
+    padding: 0px 20px 20px 20px;
 }
 
 .flex-container{
 display: flex;
-
 }
 
 .nav-item{
@@ -47,22 +50,46 @@ display: flex;
 
 }
 
+button{
+    width: 90px;
+    height: 40px;
+    border-radius: 70px;
+    margin: 20px;
+}
+
 button:hover{
     background-color: var(--white);
 
 }
 
-.portfoliocard{
-    flex: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin: 5px;
-    background-color: var(--white);
-}
-
 .grid-container {
-    display: grid;
+    flex: 1;
+    justify-content: left;
+    flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 100px); 
     background-color: var(--white);
+}
+
+.card-class{
+    display: block;
+    background-color: var(--white);
+    width: 500px;
+    height: 200px;
+    border-radius: 70px;
+    margin: 20px;
+    text-align: center;
+}
+
+aside{
+    align-content: end;
+}
+
+.PROFILE-class{
+    display: block;
+    background-color: var(--white);
+    width: 500px;
+    height: 800px;
+    margin: 20px;
+    text-align: center;
 }

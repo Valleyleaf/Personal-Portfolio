@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aston Dahllof</title>
+    <title>Aston A Dahllof</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
+<!-- For my design, I follwed the standard laid out in this wc3 article: https://www.w3schools.com/html/html5_semantic_elements.asp
+In terms of the front-end, I was hoping to mimic this website in terms of style: https://www.evotek.com/ going for a mix
+of a sharp navigation bar and rounded article.
 
+-->
 <body>
     <header>
         <h2>Aston Andersson Dahllof</h2>
         <nav class="flex-container">
             <div>
-                <button class="nav-item">About me</button>
-
-
+                <a href="Aboutme.html"><button class="nav-item">About me</button></a>
             </div>
             <div>
-                <button class="nav-item">Projects</button>
-
-
+                <a href="https://www.hiveworkshop.com/members/king-i-rat.215544/"><button class="nav-item">Projects</button></a>
             </div>
             <div>
-                <button class="nav-item">Resume</button>
-
-
+                <a href="https://www.linkedin.com/in/aston-andersson-dahllof-b4310ab5/"><button class="nav-item">Resume</button></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/aston-andersson-dahllof-b4310ab5/"><button class="nav-item">Linkedin</button></a>
             </div>
         </nav>
     </header>
-    <portfoliocard class="grid-container">
-        <div>Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-        <div>Item 4</div>
+    <portfoliocards class="grid-container">
+        <div class="card-class">Item 1</div>
+        <div class="card-class">Item 2</div>
+        <div class="card-class">Item 3</div>
+        <div class="card-class">Item 4</div>
+    </portfoliocards>
 
+    <aside class="PROFILE-class">Item 5
 
-    </portfoliocard>
+    </aside>
     
 </body>
 
