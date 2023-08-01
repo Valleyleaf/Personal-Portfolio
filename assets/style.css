@@ -58,18 +58,21 @@ display: flex;
     margin: 5px;
 }
 
-.social-buttons{
-    justify-content:space-between;
-    flex-direction:row;
-    flex: 5px;
-    padding: 0px 20px 20px 20px;
+social-buttons{
+    justify-content: center;
+    flex-direction: row;
     border: 1px solid #ccc;
     margin: 5px;
-    width: 90px;
-    height: 40px;
 }
 
 button{
+    width: 90px;
+    height: 40px;
+    border-radius: 70px;
+    margin: 20px;
+}
+
+.button-small{
     width: 90px;
     height: 40px;
     border-radius: 70px;
@@ -81,16 +84,15 @@ button:hover{
 
 }
 
-.grid-container {
+.hero-container {
     flex: 1;
     justify-content: left;
     flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 100px); 
-    background-color: var(--white);
 }
 
-.card-class{
+card-class{
     display: block;
     background-color: var(--white);
     width: 500px;
@@ -102,6 +104,7 @@ button:hover{
 
 aside{
     align-content: end;
+    flex-direction: row;
 }
 
 .PROFILE-class{
@@ -111,4 +114,9 @@ aside{
     height: 800px;
     margin: 20px;
     text-align: center;
+}
+
+main-content-body{
+    display: flex;
+    flex-direction: row;
 }
