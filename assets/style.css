@@ -61,9 +61,20 @@ display: flex;
 social-buttons{
     justify-content: center;
     flex-direction: row;
-    border: 1px solid #ccc;
     margin: 5px;
 }
+
+.social-img{
+    width: 60px;
+    height: 50px;
+}
+
+.social-img:hover{
+    width: 60px;
+    height: 50px;
+    transform: scale(1.1);
+}
+
 
 button{
     width: 90px;
