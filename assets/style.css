@@ -13,6 +13,8 @@ body{
     font-family: var(--standard-font);
     margin: 0;
     padding: 0;
+    position:static;
+    z-index: 0;
 }
 
 h2{
@@ -20,14 +22,27 @@ h2{
     justify-content: flex-start;
     font-weight: bolder;
     font-style: italic;
+    font-size: 50px;
+
 }
 /* For my design, I decided to go with a combination of square and pointed rectangles. The header, combined with the aside
 creates a boxed in shape to hold the section named "portfoliocards". */
-header, footer{
+header{
     background-color: var(--dashpurple);
     width: 100%;
     height: 100px;
     padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+footer{
+    background-color: var(--dashpurple);
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .footer-content{
@@ -37,13 +52,14 @@ header, footer{
     font-weight: bolder;
     font-style: italic;
 
+
 }
 
 nav{
     font-size: small;
     text-decoration: dashed;
     color: var(--darkgrey);
-    justify-content: flex-end;
+    justify-content:flex-end;
     padding: 0px 20px 20px 20px;
 }
 
@@ -54,33 +70,45 @@ display: flex;
 .nav-item{
     flex: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #dadada;
     margin: 5px;
 }
 
-social-buttons{
-    justify-content: center;
-    flex-direction: row;
-    margin: 5px;
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.Main-Body-Img{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    bottom: 50px;
+    z-index: -1;
 }
 
 .social-img{
-    width: 60px;
+    width: 50px;
     height: 50px;
 }
 
 .social-img:hover{
-    width: 60px;
+    width: 50px;
     height: 50px;
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-15deg);
 }
 
-
 button{
+    text-align: center;
     width: 90px;
     height: 40px;
     border-radius: 70px;
-    margin: 20px;
+    margin: 30px;
+}
+
+button:hover{
+    background-color: var(--white);
+
 }
 
 .button-small{
@@ -88,11 +116,6 @@ button{
     height: 40px;
     border-radius: 70px;
     margin: 20px;
-}
-
-button:hover{
-    background-color: var(--white);
-
 }
 
 .hero-container {
@@ -123,8 +146,10 @@ aside{
     background-color: var(--white);
     width: 500px;
     height: 800px;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
 
 main-content-body{
