@@ -52,7 +52,9 @@ If your project has a lot of features, list them here.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+Feel free to help me with debugging. When I made this site, I made a mistake where I started working on the design before
+I finished my HTML boxes. Due to this, I think I have a few uncessecary classes in my CSS but I am running out of time so
+I don't have time to clean it up.
 
 ## Tests
 

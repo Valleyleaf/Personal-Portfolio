@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aston A Dahllof</title>
+    <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" href="assets/Images/leaf.jpg">
 </head>
@@ -15,17 +16,16 @@ of a sharp navigation bar and rounded articles.
 -->
 <body>
     <header>
-        <h2>Aston Andersson Dahllof</h2>
+        <h2 id="title">Aston Andersson Dahllof</h2>
         <nav class="flex-container">
-            <a href="#card-class"></a><button class="nav-item">About me</button></a>
-            <a href="#card-class"></a><button class="nav-item">Resume</button></a>
-            <a href="#card-class"></a><button class="nav-item">Projects</button></a>
-            <a href="#card-class"></a><button class="nav-item">Contact</button></a>
+            <button class="nav-item"><a href="#container1">About me</a></button>
+            <button class="nav-item"><a href="#container2">Resume</a></button>
+            <button class="nav-item"><a href="#container3">Projects</a></button>
+            <button class="nav-item"><a href="#container4">Contact</a></button>
             
-
             <!-- 
-            I originally created the below code because I wanted to have some Seperate pages to work on later. But I ran out
-            of time and I am now instead keeping to what was asked in the ReadMe.
+            I originally created the below code because I wanted to have some Seperate pages to work on later. As mentioned in my ReadMe, I am planning to keep
+            working on this after I have submitted it and will be using the below code instead of the #href.
                 <div>
                 <a href="Aboutme.html"><button class="nav-item">About me</button></a>
             </div>
@@ -42,21 +42,37 @@ of a sharp navigation bar and rounded articles.
     </header>
     <!--In my projects, I didn't want to just put in my existing Repos and chose to instead embelish some of my other personal
     projects that I have been working on. These have been framed as if they were actual coding projects.-->
+
 <Main-content-body>
       <portfoliocards class="hero-container">
-        <card-class>Item 1</card-class>
-        <card-class>Item 2</card-class>
-        <card-class>Item 3</card-class>
-        <card-class>Item 4</card-class>
-     </portfoliocards>
+        <section class="container1">
+            <h2>About Me</h2>
+            <p><br>My Name is Aston, I am 29 years old and am currently enrolled in UNB's Full Stack coding Bootcamp.</p>
+        </section>
 
+        <section class="container2">
+            <h2>Horiseon </h2>
+            <p><br>Optimized and deployed the website for Horison Social Solution Services, Inc.</p>
+        </section>
+
+        <section class="container3">
+            <h2>Projects</h2>
+            <p><br>To watch my projects. You can follow my GitHub <a href="https://github.com/Valleyleaf">Here</a> or you can follow the <br>
+                social media buttons at the bottom of the screen.</p>
+        </section>
+
+        <section class="container4">
+            <h2>Contact</h2>
+            <p><br>Project 4</p>
+        </section>
+
+     </portfoliocards>
     <aside class="PROFILE-class">
         <div>
            <img src="assets/Images/AstonMainBodyImage.png" alt="Picture of Aston" class="Main-Body-Img">
         </div>
     </aside>
 </Main-content-body>
-
 </body>
 <!-- Note: My Github and Linkedin are properly linked. Twitter and Youtube are not. This is deliberate. I do not have a Twitter
 and I do not wish to share my Youtube. Also, I made these icons so there is no plagerism. Not sure if you count assets like that
@@ -68,6 +84,9 @@ but just in case.-->
         <a href="https://twitter.com/"><span><img src="assets/Images/TwitterButton.png" alt="TwitterButton" class="social-img"></span></a>
         <a href="https://www.youtube.com/"><span><img src="assets/Images/YoutubeButton.png" alt="YoutubeButton" class="social-img"></span></a> 
     </social-buttons>
-        <p>Copyright (c) Aston Andersson Dahllof 2023</p>
+        <p class="padding">Copyright (c) Aston Andersson Dahllof 2023</p>
+        <p>506-555-5555<br>
+            aston_dahllof@outlook.com
+        </p>
 </footer>
 </html>

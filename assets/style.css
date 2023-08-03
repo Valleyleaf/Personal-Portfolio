@@ -15,16 +15,26 @@ body{
     padding: 0;
     position:static;
     z-index: 0;
+    background-image: url(./Images/BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:darkseagreen
 }
 
 h2{
+    text-align: center;
+    justify-content:flex-start;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#title{
     text-align: left;
     justify-content:flex-start;
     font-weight: bolder;
     font-style: italic;
     font-size: 20px;
-
-
 }
 /* For my design, I decided to go with a combination of square and pointed rectangles. The header, combined with the aside
 creates a boxed in shape to hold the section named "portfoliocards". */
@@ -41,7 +51,7 @@ footer{
     background-color: var(--dashpurple);
     width: 100%;
     margin: 160px 0px 0px 0px;
-    height: 100px;
+    height: 150px;
 
 }
 
@@ -67,9 +77,15 @@ display: flex;
 }
 
 .nav-item{
+    display: inline-block;
     padding: 10px;
     border: 1px solid #dadada;
-    margin: 5px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.padding{
+    padding: 15px;
 }
 
 img{
@@ -80,7 +96,8 @@ img{
 .Main-Body-Img{
     position: relative;
     z-index: -1;
-    transform: translateY(-90px);
+    transform: translateY(53px);
+    overflow: hidden;
 
 }
 
@@ -131,8 +148,18 @@ button:hover{
     grid-template-rows: repeat(3, 100px); 
 }
 
+section{
+    background-color: var(--white);
+    width: 500px;
+    height: 200px;
+    border-radius: 70px;
+    margin: 20px;
+    text-align: center;
+    margin: 50px 10px 90px 10px;
+    border: 5px solid var(--dashpurple);
+}
+
 card-class{
-    display: block;
     background-color: var(--white);
     width: 500px;
     height: 200px;
@@ -144,6 +171,7 @@ card-class{
 aside{
     align-content: end;
     flex-direction: row;
+    border: 5px solid var(--dashpurple);
 }
 
 .PROFILE-class{
@@ -160,4 +188,13 @@ aside{
 main-content-body{
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width: 980px){
+    
+}
+
+@media screen and (max-width: 768px){
+
+
 }
