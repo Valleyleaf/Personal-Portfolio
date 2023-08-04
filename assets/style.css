@@ -6,6 +6,7 @@ font-family: Arial, Helvetica, sans-serif;
 --standard-font: arial, Helvetica, sans-serif;
 --white: #fcfcfc;
 --dashpurple: #eeb2fa;
+--harshred: #881c1c;
 }
 
 body{
@@ -39,16 +40,16 @@ h2{
 /* For my design, I decided to go with a combination of square and pointed rectangles. The header, combined with the aside
 creates a boxed in shape to hold the section named "portfoliocards". */
 header{
-    background-color: var(--dashpurple);
+    display: flex;
+    background-color: var(--white);
     width: 100%;
-    height: 100px;
+    height: 200px;
     padding: 20px;
-    position: relative;
     z-index: 2;
 }
 
 footer{
-    background-color: var(--dashpurple);
+    background-color: var(--white);
     width: 100%;
     margin: 160px 0px 0px 0px;
     height: 150px;
@@ -74,13 +75,15 @@ nav{
 
 .flex-container{
 display: flex;
+justify-content: flex-end;
+align-items: flex-end;
 }
 
 .nav-item{
     display: inline-block;
     padding: 10px;
-    border: 1px solid #dadada;
-    margin: 15px;
+    border: 1px solid var(--harshred);
+    margin: 5px;
     text-decoration: none;
 }
 
@@ -93,30 +96,10 @@ img{
     height: 100%;
 }
 
-.img2{
-    width: 80%;
-    height: 95%;
-    position: static;
-}
-
-.Main-Body-Img{
-    position: relative;
-    z-index: -1;
-    transform: translateY(53px);
-    overflow: hidden;
-
-}
-
-
+/* Below are my buttons for my header and Footer*/
 .social-img{
     width: 50px;
     height: 50px;
-}
-
-social-buttons{
-    display: block;
-    height: 50px;
-    padding: 50px px 0px 20px;
 }
 
 .social-img:hover{
@@ -132,6 +115,7 @@ button{
     height: 40px;
     border-radius: 70px;
     margin: 30px;
+    background-color: var(--darkgrey);
 }
 
 button:hover{
@@ -146,9 +130,9 @@ button:hover{
     margin: 20px;
 }
 
-.hero-container {
+.main-container {
     flex: 1;
-    justify-content: left;
+    justify-content:center;
     flex-direction: column;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 100px); 
@@ -162,23 +146,9 @@ section{
     margin: 20px;
     text-align: center;
     margin: 50px 10px 90px 10px;
-    border: 5px solid var(--dashpurple);
+    border: 5px solid var(--harshred);
 }
 
-card-class{
-    background-color: var(--white);
-    width: 500px;
-    height: 200px;
-    border-radius: 70px;
-    margin: 20px;
-    text-align: center;
-}
-
-aside{
-    align-content: end;
-    flex-direction: row;
-    border: 5px solid var(--dashpurple);
-}
 
 .PROFILE-class{
     display: block;
@@ -191,10 +161,6 @@ aside{
     z-index: 0;
 }
 
-main-content-body{
-    display: flex;
-    flex-direction: row;
-}
 
 @media screen and (max-width: 980px){
     body{

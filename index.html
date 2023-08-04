@@ -9,11 +9,6 @@
     <link rel="icon" href="assets/Images/leaf.jpg">
 </head>
 
-<!-- For my design, I follwed the standard laid out in this wc3 article: https://www.w3schools.com/html/html5_semantic_elements.asp
-In terms of the front-end, I was hoping to mimic this website in terms of style: https://www.evotek.com/ going for a mix
-of a sharp navigation bar and rounded articles.
-
--->
 <body>
     <header>
         <h2 id="title">Aston Andersson Dahllof</h2>
@@ -22,81 +17,34 @@ of a sharp navigation bar and rounded articles.
             <button class="nav-item"><a href="#container2">Resume</a></button>
             <button class="nav-item"><a href="#container3">Projects</a></button>
             <button class="nav-item"><a href="#container4">Contact</a></button>
-            
-            <!-- 
-            I originally created the below code because I wanted to have some Seperate pages to work on later. As mentioned in my ReadMe, I am planning to keep
-            working on this after I have submitted it and will be using the below code instead of the #href.
-                <div>
-                <a href="Aboutme.html"><button class="nav-item">About me</button></a>
-            </div>
-            <div>
-                <a href="https://github.com/Valleyleaf?tab=repositories"><button class="nav-item">Projects</button></a>
-            </div>
-            <div>
-                <a href="Placeholder.html"><button class="nav-item">Resume</button></a>
-            </div>
-            <div>
-                <a href="Contact.html"><button class="nav-item">Contact</button></a>
-            </div> -->
         </nav>
     </header>
-    <!--In my projects, I didn't want to just put in my existing Repos and chose to instead embelish some of my other personal
-    projects that I have been working on. These have been framed as if they were actual coding projects.-->
+        <Main-content-body>
+            <portfoliocards class="main-container">
+                <section class="container1">
+                    <h2>About Me</h2>
+                    <p><br>My Name is Aston, I am 29 years old and am currently enrolled in UNB's Full Stack coding Bootcamp.</p>
+                </section>
 
-<Main-content-body>
-      <portfoliocards class="hero-container">
-        <section class="container1">
-            <h2>About Me</h2>
-            <p><br>My Name is Aston, I am 29 years old and am currently enrolled in UNB's Full Stack coding Bootcamp.</p>
-        </section>
+                <section class="container2">
+                    <h2>Horiseon </h2>
+                    <p><br>Optimized and deployed the website for</p> 
+                    <a href="https://valleyleaf.github.io/02-CHALLENGE/">Horison Social Solution Services, Inc.</a>
+                </section>
 
-        <section class="container2">
-            <h2>Horiseon </h2>
-            <p><br>Optimized and deployed the website for</p> 
-            <a href="https://valleyleaf.github.io/02-CHALLENGE/">Horison Social Solution Services, Inc.</a>
-        </section>
+                <section class="container3">
+                    <h2>Battle of Dominance</h2>
+                    <p><br>Created the Custom Warcraft 3 Map "<a href="https://www.hiveworkshop.com/threads/battle-of-dominance-v2-0-arcane-showdown.326630/">Battle of Dominance</a>"" <br>
+                        which is the reason I got into coding to begin with.</p>
+                </section>
 
-        <section class="container3">
-            <h2>Battle of Dominance</h2>
-            <p><br>Created the Custom Warcraft 3 Map "<a href="https://www.hiveworkshop.com/threads/battle-of-dominance-v2-0-arcane-showdown.326630/">Battle of Dominance</a>"" <br>
-                which is the reason I got into coding to begin with.</p>
-        </section>
-
-        <section class="container4">
-            <h2>Pentagon Security Project</h2>
-            <p><br>Created the IT Infrastucture security system for the pentagon. Under NDA so I can't link it.</p>
-        </section>
-
-     </portfoliocards>
-<!-- I overcomplicated this project and tried to make it way fancier than what was asked of me. I am now out of time and am forced to submit. -->
-     <PortfolioImages class="hero-container">
-        <section>
-            <img src="assets/Images/leaf.jpg" alt="HorisionExampleImage" class="img2">
-        </section>
-
-        <section>
-            <img src="assets/Images/ExampleImage.PNG" alt="HorisionExampleImage" class="img2">
-        </section>
-
-        <section>
-            <img src="assets/Images/Hive.png" alt="HorisionExampleImage" class="img2">
-        </section>
-
-        <section>
-            <img src="assets/Images/Pentagon.png" alt="HorisionExampleImage" class="img2">
-        </section>
-
-     </PortfolioImages>
-    <aside class="PROFILE-class">
-        <div>
-           <img src="assets/Images/AstonMainBodyImage.png" alt="Picture of Aston" class="Main-Body-Img">
-        </div>
-    </aside>
-</Main-content-body>
+                <section class="container4">
+                    <h2>Pentagon Security Project</h2>
+                    <p><br>Created the IT Infrastucture security system for the pentagon. Under NDA so I can't link it.</p>
+                </section>
+        </Main-content-body>
 </body>
-<!-- Note: My Github and Linkedin are properly linked. Twitter and Youtube are not. This is deliberate. I do not have a Twitter
-and I do not wish to share my Youtube. Also, I made these icons so there is no plagerism. Not sure if you count assets like that
-but just in case.-->
+
 <footer class="flex-container, footer-text-class">
     <social-buttons>
         <a href="https://github.com/Valleyleaf"><span><img src="assets/Images/GithubButton.png" alt="GithubButton" class="social-img"></span></a>
