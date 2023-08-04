@@ -93,6 +93,12 @@ img{
     height: 100%;
 }
 
+.img2{
+    width: 80%;
+    height: 95%;
+    position: static;
+}
+
 .Main-Body-Img{
     position: relative;
     z-index: -1;
@@ -101,10 +107,10 @@ img{
 
 }
 
+
 .social-img{
     width: 50px;
     height: 50px;
-
 }
 
 social-buttons{
@@ -191,10 +197,31 @@ main-content-body{
 }
 
 @media screen and (max-width: 980px){
+    body{
+        font-size: 16px;
+        background-color: var(--dashpurple);
+    }
+
+    .Main-Body-Img{
+        position: relative;
+        z-index: -1;
+        transform: translateY(200px);
+        overflow: hidden;
     
+    }
 }
 
 @media screen and (max-width: 768px){
+    body{
+        font-size: 20px;
+        background-color: var(--darkgrey);
+    }
 
-
+    .Main-Body-Img{
+        position: relative;
+        z-index: -1;
+        transform: translateY(520px);
+        overflow: hidden;
+    
+    }
 }
